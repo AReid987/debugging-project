@@ -4,14 +4,20 @@ import '../styles.css'
 
 class Displayer extends Component {
   render() {
-    
-    console.log(dogsArray[2])
+    const parsedDogImages = dogsArray.map((url, index) => {
+      return <img src={url} alt={'dog'} key={index} className={'display-img'}/>
+    })
+
+    const parsedNotDogsImages = notDogsArray.map((url, index) => {
+      return <img src={url} alt={'notDog'} key={index} className={'display-img'}/>
+    })
+
     return(
       <React.Fragment>
         <h2>These are good dogs!</h2>
-        {dogsArray}
+        {parsedDogImages}
         <h2>These are bad dogs!</h2>
-        {notDogsArray}
+        {parsedNotDogsImages}
       </React.Fragment>
     )
   }
