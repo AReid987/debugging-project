@@ -1,5 +1,3 @@
-import React from "react"
-
 export const dogsArray = [
   'https://pbs.twimg.com/profile_images/948761950363664385/Fpr2Oz35_400x400.jpg',
   'https://www.healthypawspetinsurance.com/Images/V3/DogAndPuppyInsurance/Dog_CTA_Desktop_HeroImage.jpg',

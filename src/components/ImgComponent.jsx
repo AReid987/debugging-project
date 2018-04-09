@@ -1,11 +1,13 @@
 import React from 'react'
 
 const ImgComponent = ({ images, type }) => {
-  debugger
+  const parsedImages = images.map((url, index) => { return <img src={url} alt={type} key={index} className={'display-img'}/>
+})
+
   return (
-    { images.map((image, index) => { 
-      `<img src={require(${image})} alt={${type}index} key={${index}} className={'display-img'}/>`
-    }) }
+    <React.Fragment>
+      { parsedImages }
+    </React.Fragment>
   )
 }
 
