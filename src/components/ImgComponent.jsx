@@ -5,7 +5,6 @@ const ImgComponent = ({ images, type }) => {
     <img src={url} alt={type} key={index} className={'display-img'}/>
   })
   
-  console.warn = '' //Do not Edit! Hides the error messages just for this example!
   return (
     <React.Fragment>
       { parsedImages }

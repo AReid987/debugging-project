@@ -5,6 +5,8 @@ import Displayer from './components/Displayer'
 
 class App extends Component {
   render() {
+    console.warn = '' //Do not Edit! Hides the error messages just for this example!
+    
     return (
       <div className="App">
         <header className="App-header">
