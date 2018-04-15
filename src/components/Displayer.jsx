@@ -8,7 +8,7 @@ class Displayer extends Component {
     return(
       <React.Fragment>
         <h2><span /> These are good dogs! <span /></h2>
-        <ImgComponent images={dogsArray} type={'Dog'} />
+        <ImgComponent images={this.props.images} type={'Dog'} />
         
         <h2><span /> These are bad dogs! <span /> </h2>
         <ImgComponent images={notDogsArray} type={'NotDog'} />
