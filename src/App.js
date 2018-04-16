@@ -9,7 +9,7 @@ import Displayer from './components/Displayer'
 
 class App extends Component {
   componentDidMount() {
-    [1,2,3].forEach(()=> {
+    [...Array(3)].forEach(()=> {
       this.props.requestDogImages()
     })
   }
