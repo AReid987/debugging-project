@@ -15,12 +15,13 @@ class App extends Component {
   }
 
   render() {
+    const {dogImages, requestDogImages} = this.props
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <Displayer images={this.props.dogImages}/>
+        <Displayer images={dogImages} requestDogs={requestDogImages}/>
       </div>
     );
   }

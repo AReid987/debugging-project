@@ -7,6 +7,7 @@ class Displayer extends Component {
   render(){
     return(
       <React.Fragment>
+        <button onClick={this.props.requestDogImages}>Fetch good dogs!</button>
         <h2><span /> These are good dogs! <span /></h2>
         <ImgComponent images={this.props.images} type={'Dog'} />
         
