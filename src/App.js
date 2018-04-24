@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { requestDogImages }  from './actions/fetchImages'
+import { Switch, Route } from 'react-router-dom'
 
 import logo from './logo.svg'
 import './App.css'
@@ -20,7 +21,12 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <Displayer images={this.props.dogImages}/>
+        <Switch>
+          <Route exact path='/' render={(props) => (
+            <Displayer images={this.props.dogImages} />
+          )}/>
+        </Switch>
+        
       </div>
     );
   }
